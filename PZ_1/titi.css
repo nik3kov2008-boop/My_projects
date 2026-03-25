@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #111a24;  
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#cici{
+    text-align: center;
+    height: 800px;
+    margin: 100px 300px;
+    border-radius:100px ;
+    background: #131f2b;  
+    box-shadow: 0 0 15px rgb(20, 218, 218);
+}
+#cici:hover{
+    cursor: default;
+}
+h1{
+    color: rgb(0, 162, 255);
+    margin: 0 auto;
+    margin: 50px;
+    font-size: 100px;
+} 
+#counter{
+    color: rgb(155, 159, 163);
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 10em;
+}
+#start{
+    color:rgb(59, 49, 68);
+    display: inline-block;
+    text-align: center;
+    margin-top: 175px;
+    margin-left: 300px;
+    margin-right: 100px;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.4s;
+    background: linear-gradient(to right, #5a80d2, #892ad8);
+}
+#pause{
+    color:rgb(59, 49, 68);
+    display: inline-block;
+    text-align: center;
+    margin-top: 175px;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.4s;
+    background: linear-gradient(to right, #5a80d2, #892ad8);
+}
+
+#stop{
+    color:rgb(59, 49, 68);
+    display: inline-block;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 100px;
+    margin-top: 175px;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.4s;
+    background: linear-gradient(to right, #5a80d2, #892ad8);
+}
+#start:hover,#pause:hover,#stop:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgb(37, 80, 221);
+    background: linear-gradient(to right, #3d65bb, #6a1bac);
+    transform:translate(0px, -35px);
+    padding: 15px 39px;
+    font-size: 43px;
+}
