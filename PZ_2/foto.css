@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#21242b; 
+}
+
+.gallery{
+    margin: 250px;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30%;
+}
+
+#text_for_1,#text_for_2,#text_for_3{
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    left: 60%;
+    color: white;
+    border-radius: 25%;
+    width: 700px;
+    font-size: 25px; 
+    opacity: 0;
+    transform:translate(-100%, 0%);
+    transition: all 1s ease;
+}
+
+#text_for_1.active,#text_for_2.active,#text_for_3.active{
+    opacity: 1;
+    transform:translate(0%, 0%);
+}
+
+#tut1,#tut2,#tut3{
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    color: rgb(209, 209, 209);
+}
+
+#zag1,#zag2,#zag3{
+    margin: 25px;
+    margin-left: 140px;
+    margin-bottom: 50px;
+}
+
+.img:hover{
+    box-shadow: 0 0 30px rgb(158, 3, 3);
+}
+
+#img-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0);
+    z-index: 1000;
+    transform: translate(-100%, 0%);
+    transition: all 1s ease,background-color 0.5s ease 0.7s;
+    opacity: 0;
+}
+
+#img-window.active{
+    background-color: rgba(0,0,0,0.8);
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
+#choice-img{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-100%, -50%) scale(0.7);   
+    opacity: 0;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    transition: all 0.5s ease;
+    border-radius: 30%;
+}
+
+#choice-img:hover{
+    box-shadow: 0 0 36px rgb(255, 0, 43);
+}
+
+#choice-img.active {
+    border-radius: 5%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transform: translateY( 0 0px);
+}
+
+#close{
+    position: absolute;
+    border-radius: 75px;
+    width: 330px;
+    height: 60px;
+    top: 80%;
+    right: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 0, 13, 0.1);
+    color: rgba(221, 119, 16, 0.3);
+    box-shadow: 0 0 9px rgba(160, 2, 10, 0.377); 
+    transition: all 0.3s ease;
+}
+
+#close:hover{
+    background: linear-gradient(90deg, #000000,#731212,#8a0303);
+    color: rgba(221, 119, 16, 1);
+    box-shadow: 0 0 30px rgba(160, 2, 10, 0.8);
+    cursor: pointer;
+}
